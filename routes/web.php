@@ -17,11 +17,10 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/about', function () {
-  $nama = 'Zahrina Aulia Adriani';
-    return view('about',['nama' => $nama]);
+Route::get('/login', function () {
+    return view('login');
 });
 
-Route::get('/mahasiswa', function () {
-    return view('mahasiswa');
+Route::get('/daftar', function () {
+    return view('daftar');
 });

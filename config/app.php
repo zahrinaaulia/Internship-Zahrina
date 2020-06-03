@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost:8080/blog/public'),
+    'url' => env('APP_URL', 'http://localhost:8080/Internship-Zahrina/public'),
 
     'asset_url' => env('ASSET_URL', null),
 
