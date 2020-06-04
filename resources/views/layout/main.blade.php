@@ -459,7 +459,7 @@
       </div>
     </div>
   </div>
-</footer
+</footer>
 
 
     <!-- Optional JavaScript -->
