@@ -89,8 +89,6 @@
 
       }
 
-
-
       .button2{
         border: 2px solid #00beff;
         width: 150px;
@@ -99,6 +97,17 @@
         background-color:white;
         border-radius: 4px;
         margin-top: 2%;
+      }
+
+      .button3{
+        border: 2px solid #00beff;
+        width: 250px;
+        height:50px;
+        color: white;
+        background-color:#00beff;
+        border-radius: 4px;
+        margin-top: 2%;
+        margin-left: 40%;
       }
 
       .button1{
@@ -148,14 +157,107 @@
       .nim{
         font-family: 'Barlow', sans-serif;
         margin-top: 8px;
-        font-size: 16px;
         font-weight: 600;
         line-height: 1;
         margin-left: 10%;
+        color: #485c77;
+        font-size: 14px;
       }
-      .col img{
-        margin-left: 5%;
+
+      .container-fluid2{
+        margin-top:5%;
+        padding-bottom: 5%;
+        margin-bottom:5%;
+        background-color: #f6f7fa;
       }
+
+      .container-fluid2 h1{
+        text-align: center;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin-top:5%;
+        padding-top: 5%;
+        font-size: 30px;
+        color: #485c77;
+      }
+
+      .container-fluid2 p{
+        text-align: center;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin-top: 2%;
+        color: #485c77;
+        padding-bottom:3%;
+      }
+
+      .tables{
+      margin: auto;
+      width: 70%;
+      padding: 10px;
+      margin-top: inherit;
+      }
+
+      .fotter{
+        background-color: #0c2846;
+      }
+
+      .new-container{
+        margin-top: 3%;
+        margin-bottom: 0%;
+        padding: 5%;
+      }
+
+      .linked-in{
+        display: inline;
+      }
+
+      .medium{
+        display: inline;
+      }
+
+      .facebook{
+        display: inline;
+      }
+
+      .youtube{
+        display: inline;
+      }
+
+      .social{
+        float: right;
+        width: 300px;
+        padding: 5px;
+      }
+
+      .atas a{
+        color: white;
+        font-size: 12px;
+      }
+
+      .atas h5{
+        padding-bottom: 3%;
+        font-size: 16px;
+      }
+
+      .list p{
+        padding-bottom: 3%;
+      }
+
+      .list1 a{
+        color: white;
+      }
+
+      .left{
+        color: white;
+        margin-top: 2%;
+        float: left;
+      }
+
+      .right{
+        color: white;
+        margin-top: 2%;
+        float: right;
+      }
+
+
 
     </style>
   </head>
@@ -208,6 +310,157 @@
 </nav>
 
 @yield('container')
+
+<footer class="fotter">
+  <div class="new-container">
+    <div class="footer-up">
+      <div class="row" style="border-bottom:1px solid #1e3f6b; padding-bottom:2%;">
+        <div class="col-lg-8">
+          <div class="quip">
+            <img src="{{ asset('/img/quipper.png') }}" height="10%;" width="20%;">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="social">
+            <div class="linked-in">
+              <img src="{{ asset('/img/social1.JPG') }}" style="width: 15%; height: 15%;">
+            </div>
+            <div class="medium">
+              <img src="{{ asset('/img/social2.JPG') }}" style="width: 15%; height: 15%;">
+            </div>
+            <div class="facebook">
+              <img src="{{ asset('/img/social 3.JPG') }}" style="width: 15%; height: 15%;">
+            </div>
+            <div class="youtube">
+              <img src="{{ asset('/img/social4.JPG') }}" style="width: 15%; height: 15%;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-middle">
+      <div class="row" style="border-bottom:1px solid #1e3f6b; padding-bottom:2%;">
+        <div class="col mr-auto my-md-4 my-0 mt-4 mb-1">
+          <div class="atas">
+            <h5 style="color:white;"> Untuk Murid </h5>
+              <ul class="list-unstyled">
+              <li class="list">
+                <p>
+                  <a href="#!">Quipper Video</a>
+                </p>
+              </li>
+              <li class="list">
+                <p>
+                  <a href="#!">Quipper Video</a>
+                </p>
+              </li>
+              <li class="list">
+                <p>
+                  <a href="#!">Quipper Video</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <br>
+          <div class="atas">
+            <h5 style="color:white;"> Untuk Guru </h5>
+              <ul class="list-unstyled">
+                <li class="list">
+                  <p>
+                    <a href="#!">Quipper School</a>
+                  </p>
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div class="col mx-auto my-md-4 my-0 mt-4 mb-1">
+            <div class="atas">
+              <h5 style="color:white;">Tentang Quipper</h5>
+              <ul class="list-unstyled">
+              <li class="list">
+                <p>
+                  <a href="#!">Quipper Indonesia</a>
+                </p>
+              </li>
+              <li class="list">
+                <p>
+                  <a href="#!">Karier</a>
+                </p>
+              </li>
+              <li class="list">
+                <p>
+                  <a href="#!">Media</a>
+                </p>
+              </li>
+              <li class="list">
+                <p>
+                  <a href="#!">Quipper Blog</a>
+                </p>
+              </li>
+              <li class="list">
+                <p>
+                  <a href="#!">Tech Blog</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col mx-auto my-md-4 my-0 mt-4 mb-1">
+          <div class="atas">
+            <h5 style="color:white;">PT Quipper Edukasi Indonesia</h5>
+            <ul class="list-unstyled">
+              <li class="list">
+                <p>
+                  <a>The H Tower, 18th floor Jalan H.R. Rasuna Said Kav. 20 Kuningan,
+                  Jakarta, Indonesia 12940</a>
+                </p>
+              </li>
+              <li class="list">
+                <p>
+                  <a><i></i>info-id@quipper.com<a>
+                </p>
+              </li>
+              <li class="list">
+                <p>
+                  <a><i></i>0811 1785 309<a>
+                </p>
+              </li>
+              <li class="list">
+                <p>
+                  <a><i></i>0811 1785 309<a>
+                </p>
+              </li>
+          </div>
+        </div>
+        <div class="col text-center mx-4 my-4" >
+          <div class="atas">
+            <h5 style="color:white;"> Download aplikasi Android Quipper</h5>
+            <ul class="list-unstyled">
+              <li class="list">
+                <img src="https://www.quipper.com/id/shared/images/video/android-preview.png" style="width: 50%; height: 50%;">
+              </li>
+              <li class="list">
+                <img src="https://www.quipper.com/id/shared/images/video/google-play.png"style="width: 30%; height: 30%;">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="left">© 2020. All rights reserved</div>
+      <div class="right">
+        <ul class="list-inline">
+          <li class="list-inline-item">Syarat & Ketentuan</li>
+          <li class="list-inline-item">Kebijakan Privasi</li>
+          <li class="list-inline-item">Indonesia</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</footer
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
