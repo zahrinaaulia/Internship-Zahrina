@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Login</title>
+    <title>Daftar</title>
 
     <style>
 
@@ -237,8 +237,8 @@
 
               <div class="form-group">
                 <label>Kata Sandi</label>
-                <div class="input-group" id="show_hide_password" placeholder="Masukkan Kata Sandi">
-                  <input class="form-control" type="password" style="border-right:none;">
+                <div class="input-group" id="show_hide_password">
+                  <input class="form-control" type="password" placeholder="Masukkan Kata Sandi" style="border-right:none;">
                   <div class="input-group-addon">
                     <a href=""><i class="fa fa-eye-slash" aria-hidden="true" style="font-size:30px; color:#bed2e8;"></i></a>
                   </div>
@@ -252,8 +252,8 @@
               </div>
 
               <div class="form-group">
-                <div class="input-group" id="show_hide_password" placeholder="Konfirmasi Kata Sandi">
-                  <input class="form-control" type="password" style="border-right:none;" >
+                <div class="input-group" id="show_hide_password" >
+                  <input class="form-control" type="password" placeholder="Masukkan Kata Sandi" style="border-right:none;" >
                   <div class="input-group-addon">
                     <a href=""><i class="fa fa-eye-slash" aria-hidden="true" style="font-size:30px; color:#bed2e8;"></i></a>
                   </div>
@@ -282,7 +282,7 @@
             </div>
 
             <div class="bottom1">
-                <span>Jika Anda sudah punya akun, silakan <b><a>Masuk</a></b>.</span>
+                <span>Jika Anda sudah punya akun, silakan <b><a href="/login">Masuk</a></b>.</span>
             </div>
           </div>
         </div>
