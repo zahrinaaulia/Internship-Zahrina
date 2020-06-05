@@ -60,13 +60,13 @@
         padding
       }
 
-      .container-fluid{
+      .container-fluid4{
         margin-top:5%;
         background-color:#7a69e4;
         padding: 5px;
       }
 
-      .container-fluid p{
+      .container-fluid4 p{
         text-align: center;
         color:white;
         font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;

@@ -46,10 +46,24 @@
 
       .Registration{
         padding: 4%;
+        color: #6b8fbc;
       }
 
       .upper{
         text-align: center;
+      }
+
+      .bottom{
+        text-align: center;
+        border-bottom: 1px solid #e3ecf5;
+        padding-bottom: 2%;
+
+      }
+
+      .bottom1{
+        text-align: center;
+        padding-top: 2%;
+
       }
 
       .face{
@@ -91,6 +105,45 @@
         width: 10%;
         height: auto;
         text-align: center;
+        border-left:none;
+      }
+
+
+      .buat{
+        padding:3%;
+        margin-top: 3%;
+        margin-bottom:10%;
+        width: 100%;
+        background-color: #4267b2;
+        border: none;
+        border-radius: 5px;
+        color:white;
+        font-size: ;
+        font-weight: 700;
+        background-color: #009feb;
+        height: 70px;
+        color: #fff;
+        text-align: center;
+      }
+
+      .bottom a{
+        color: #009feb;
+      }
+
+      .bottom1 a{
+        color: #009feb;
+      }
+
+      label{
+        color: black;
+        font-weight: 600;
+      }
+
+      .footer{
+        width: 100%;
+        margin-top: 3%;
+        background-color: #0c2846;
+
       }
 
 
@@ -115,13 +168,12 @@
                <a class="nav-link" href="#">Negara Anda</a>
              </li>
              <li class="nav-item dropdown">
-               <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 Indonesia
-               </a>
-               <div class="dropdown-menu dropdown-menu-right">
-                 <a class="dropdown-item" href="#">Mexico</a>
-                 <a class="dropdown-item" href="#">Malaysia</a>
-                 <a class="dropdown-item" href="#">Lainnya</a>
+               <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Indonesia</option>
+                  <option>Malaysia</option>
+                  <option>Mexico</option>
+                  <option>Lainnya</option>
+                </select>
                </div>
              </li>
            </ul>
@@ -186,7 +238,7 @@
               <div class="form-group">
                 <label>Kata Sandi</label>
                 <div class="input-group" id="show_hide_password" placeholder="Masukkan Kata Sandi">
-                  <input class="form-control" type="password">
+                  <input class="form-control" type="password" style="border-right:none;">
                   <div class="input-group-addon">
                     <a href=""><i class="fa fa-eye-slash" aria-hidden="true" style="font-size:30px; color:#bed2e8;"></i></a>
                   </div>
@@ -201,22 +253,65 @@
 
               <div class="form-group">
                 <div class="input-group" id="show_hide_password" placeholder="Konfirmasi Kata Sandi">
-                  <input class="form-control" type="password">
+                  <input class="form-control" type="password" style="border-right:none;" >
                   <div class="input-group-addon">
                     <a href=""><i class="fa fa-eye-slash" aria-hidden="true" style="font-size:30px; color:#bed2e8;"></i></a>
                   </div>
                 </div>
               </div>
 
-              
+              <div class="form-group">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1" onclick="myFunction()">
+                  <label class="custom-control-label" for="customCheck1">Saya punya Nomor Keanggotaan Sekolah</label>
+                </div>
+              </div>
 
+              <div class="form-group">
+                <input type="text" class="form-control" id="text" placeholder="Masukkan 12 digit Nomor Keanggotaan Sekolah">
+              </div>
 
-
-
+              <div class="form-group">
+                <button type="submit" class="buat">Buat Akun</button>
+              </div>
             </form>
+
+            <div class="bottom">
+              <span>Dengan klik <b>Buat Akun,</b></span><br>
+              <span>artinya Anda setuju atas <b><a>Syarat & Ketentuan</a></b> dan <b><a>Kebijakan Privasi</a></b> kami.</span>
+            </div>
+
+            <div class="bottom1">
+                <span>Jika Anda sudah punya akun, silakan <b><a>Masuk</a></b>.</span>
+            </div>
           </div>
         </div>
       </section>
+    </div>
+
+    <div class="footer">
+      <div class="container fluid">
+        <div class="row" style="padding-top:3%; padding-bottom:3%;">
+          <div class="col">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAxMjggMzIiPgogICAgPHBhdGggZmlsbD0iIzZCOEZCQyIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNDQuODEgOS4zNzF2MTEuNzg2aDEuNTU3djQuMjdoLTYuMDA1bC0uODU3LTIuMDIyYy0uNjk5LjgwMi0xLjgxMSAyLjQ3Mi00LjUxMSAyLjQ3Mi00Ljc5NyAwLTYuMzg1LTIuNTA1LTYuMzg1LTcuODM1VjEzLjYxaC0xLjMzNFY5LjM3MWg3LjY4N3Y3Ljc0YzAgMi43Ni40MTMgNC4wNDYgMS43MTUgNC4wNDYgMS4xMTIgMCAyLjAwMi0uOTk2IDIuMDAyLTIuNDQxVjEzLjYxaC0yLjA5N1Y5LjM3MWg4LjIyOHptNy42NjItMS44MzRjLTEuOTcgMC0zLjM3OC0xLjY3NS0zLjM3OC0zLjE5M2EzLjMgMy4zIDAgMCAxIDMuMzc4LTMuMjI2YzIuMTU4IDAgMy40NCAxLjc3MSAzLjQ0IDMuMjI2IDAgMS43NC0xLjIyIDMuMTkzLTMuNDQgMy4xOTN6bTIuODcgMS44MzR2MTEuODQzaDEuNDh2NC4yMDRoLTguNjM3di00LjIwNGgxLjI5NXYtNy42N2gtMS4yOTVWOS4zN2g3LjE1NnpNNjguMDMyIDIxLjQ4Yy0xLjIwNSAwLTIuMjgzLTEuNjY4LTIuMjgzLTMuODQ4LS4xMjYtMi41MzMgMS4wMTUtNC4xMDUgMi4yNTEtNC4xMDUgMS4zOTUgMCAyLjI4MyAyLjAyIDIuMjgzIDMuOTQ1IDAgMi40MzctLjkyIDQuMDA4LTIuMjUxIDQuMDA4bTEuNTg1LTEyLjQ3NGMtMS45MDIgMC0zLjIzMy45My0zLjgzNSAxLjM3OWwtLjU0LTEuMTIyaC03LjI1OXY0LjI2NGgxLjMzMXYxNC4xMWgtMS4zM3Y0LjJoOS40Nzh2LTQuMkg2NS43NXYtMy4yNGMuMjIyLjE5MyAxLjQ5IDEuMjUxIDQuMTIxIDEuMjUxIDQuMDkgMCA3LjIyOC0zLjE0MiA3LjIyOC04LjI0IDAtNC41NTQtMi41MzYtOC40MDItNy40ODEtOC40MDJNODcuNzU2IDIxLjQ4Yy0xLjE5NCAwLTIuMjYyLTEuNjY4LTIuMjYyLTMuODQ4LS4xMjYtMi41MzMgMS4wMDUtNC4xMDUgMi4yMy00LjEwNSAxLjM4MyAwIDIuMjYzIDIuMDIgMi4yNjMgMy45NDUgMCAyLjQzNy0uOTEyIDQuMDA4LTIuMjMgNC4wMDhtMS41Ny0xMi40NzRjLTEuODg1IDAtMy4yMDQuOTMtMy44MDEgMS4zNzlsLS41MzUtMS4xMjJoLTcuMTk0djQuMjY0aDEuMzJ2MTQuMTFoLTEuMzJ2NC4yaDkuMzk0di00LjJoLTEuNjk3di0zLjI0Yy4yMi4xOTMgMS40NzYgMS4yNTEgNC4wODQgMS4yNTEgNC4wNTMgMCA3LjE2My0zLjE0MiA3LjE2My04LjI0IDAtNC41NTQtMi41MTMtOC40MDItNy40MTQtOC40MDJtMTYuODkyIDQuMjEyYzIuMDA2IDAgMi4yODggMS4zMzkgMi4zMiAyLjU1aC00LjczNGMuMDYzLS43OTcuNTAxLTIuNTUgMi40MTQtMi41NW0xLjMxMSA4LjMyM2MxLjA2NiAwIDIuNjk2LS4wOTYgNC4zOS0xLjUzMmwyLjYzMyAzLjA5NGMtMi4zMiAyLjA0LTQuODI4IDIuNzc0LTguMDg4IDIuNzc0LTMuODg4IDAtOC4yNzctMi41Mi04LjI3Ny04LjY0MSAwLTUuMjMgMy43LTguMzIzIDguNDMzLTguMzIzIDMuNzMxIDAgNi41ODQgMS45NDUgNy40OTMgNC42MjQuMzc2IDEuMTE2LjcyIDMuNTcuMDYyIDUuMzg5SDEwNC4zYy4xODguODYuNTk2IDIuNjE1IDMuMjMgMi42MTV6TTEyOCAxNC4yNjljLTIuODc0IDAtNC41MDQuNzI3LTQuNTA0IDMuNTEydjMuMjU5aDEuNTk3djQuMTQ0aC05LjAzOFYyMS4wNGgxLjQwNXYtNy41NjJoLTEuMzc0VjkuMzY1aDYuMDA2bC45NTcgMi4wMjVjLjgzLTEuNTE5IDEuNjYyLTIuODE2IDQuOTUxLTIuODE2djUuNjk1em0tMTE1Ljg4MiA2LjFjLTIuMzYgMC00LjI3NC0zLjMzOC00LjI3NC03LjQ1NnMxLjkxMy03LjQ1NSA0LjI3NC03LjQ1NWMyLjM2IDAgNC4yNzUgMy4zMzcgNC4yNzUgNy40NTVzLTEuOTE0IDcuNDU2LTQuMjc1IDcuNDU2em0xMS40MyAyLjU2N2MwIC42MTQtLjA3MSAxLjYyNy0uNzE0IDEuNjI3LS44OTQgMC0xLjI4Ny0xLjIzLTEuNTczLTIuMzUgMS45NjYtMi4xNyAyLjk2Ni01LjI0MiAyLjk2Ni05LjAzNyAwLTcuNjk5LTMuNzg3LTEyLjgzMS0xMi4yMi0xMi44MzFDNC44MjMuMzQ1IDAgNS41NDkgMCAxMi45MjNjMCA4LjUzIDUuMDAyIDEyLjc5NiAxMi4yMiAxMi43OTYuOTY1IDAgMS45My0uMDczIDIuNzg4LS4yMTcuNzg2IDIuMTMyIDIuNjA5IDQuMDEyIDUuNTM5IDQuMDEyIDMuNTczIDAgNS4zNi0yLjU2NiA1LjM2LTUuNzgzdi0xLjg0NGgtMi4zNTl2MS4wNDl6Ii8+Cjwvc3ZnPgo=">
+          </div>
+          <div class="col" style="color:white;">
+            <a herf="">2020 Quipper Limited</a>
+          </div>
+          <div class="col" style="color:white;">
+            <a herf="">Bahasa Indonesia</a>
+          </div>
+          <div class="col" style="color:white;">
+            <a herf="">Syarat dan Ketentuan</a>
+          </div>
+          <div class="col" style="color:white;">
+            <a herf="">Kebijakan Privasi</a>
+          </div>
+          <div class="col" style="color:white;">
+            <a herf="">Hubungi Kami</a>
+          </div>
+        </div>
+      </div>
     </div>
 
 
@@ -254,6 +349,22 @@
         }
     });
   });
+
+
+  function myFunction() {
+  var checkBox = document.getElementById("customCheck1");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+
+
+
+
+
     </script>
 
   </body>

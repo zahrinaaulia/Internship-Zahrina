@@ -3,7 +3,7 @@
 @section('title','web programming')
 
 @section('container')
-  <div class="container-fluid">
+  <div class="container-fluid4">
       <p>Sekolah ditutup? tetap tenang karena guru dan siswa #BisaTetapBelajar dengan Platform dan materi gratis dari Quipper. <a><b> Info lebih Lanjut</b></a></p>
   </div>
   <div clas="container-fluid">
@@ -39,7 +39,7 @@
     <h1>Temukan layanan terbaik Quipper di sini!</h1>
   </div>
 
-  <div class="container-fluid1">
+  <div class="container-fluid">
     <div class="row">
       <div class="col">
         <img src="{{ asset('/img/section1.png') }}" style="width:95%; height:100%;">
@@ -62,7 +62,7 @@
     </div>
   </div>
 
-  <div class="container-fluid1">
+  <div class="container-fluid">
     <div class="row">
       <div class="col">
         <div align="left">
@@ -85,7 +85,7 @@
     </div>
   </div>
 
-  <div class="container-fluid1">
+  <div class="container-fluid">
     <div class="row">
       <div class="col">
         <img src="{{ asset('/img/section3.png') }}" style="width:95%; height:100%;">
@@ -108,7 +108,7 @@
     </div>
   </div>
 
-  <div class="container-fluid1">
+  <div class="container-fluid">
     <div class="row" style="border-bottom:1px solid #E0E0E0;">
       <div class="col">
         <div align="left">
@@ -130,7 +130,7 @@
     </div>
   </div>
 
-  <div class="container-fluid1">
+  <div class="container-fluid">
     <div class="judul">
       <h1 style="color: #485c77; font-family:inherit;"> Quipper untuk Indonesia </h1>
     </div>
@@ -164,7 +164,7 @@
     </div>
   </div>
 
-  <div class="container-fluid2">
+  <div class="container-fluid">
     <div class="judul">
       <h1> Quipper blog </h1>
       <p> Simak Berita, Tips, dan Trik Seputar Pendidikan di Quipper Blog </p>
@@ -206,7 +206,7 @@
       <button class="button3"> Artikel Lainnya </button>
   </div>
 
-  <div class="container-fluid1">
+  <div class="container-fluid">
     <div class="judul">
       <h1 style="color: #485c77;"> Telah Diliput di</h1>
     </div>
